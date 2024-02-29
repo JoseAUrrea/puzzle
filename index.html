@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Puzzle Page 1</title>
+    <script src="script1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#menu a').click(function(e) {
+                var pageToLoad = $(this).attr('href');
+                $('.puzzle').fadeOut(300, function() {
+                    window.location.href = pageToLoad;
+                });
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>Sliding Puzzle</h1>
+    <p>Menu:</p>
+    <ul id="menu">
+        <li><a href="index.html">Sliding Puzzle</a></li>
+        <li><a href="index2.html">Draggable Puzzle</a></li>
+    </ul>
+    <p>Use the controls to move the puzzle piece to its final position!</p>
+    <div id="controls">
+        <button id="up">Up</button>
+        <button id="down">Down</button>
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+    </div>
+
+    <div id="puzzleContainer">
+        <div class="puzzlePiece" id="piece1" style="z-index: 2;">
+            <img src="images/piece1.jpg" alt="Piece 1">
+        </div>
+        <div class="puzzlePiece" id="piece2">
+            <img src="images/piece2.jpg" alt="Piece 2">
+        </div>
+        <div class="puzzlePiece" id="piece3">
+            <img src="images/piece3.jpg" alt="Piece 3">
+        </div>
+        <div class="puzzlePiece" id="piece4">
+            <img src="images/piece4.jpg" alt="Piece 4">
+        </div>
+        <div class="puzzlePiece" id="piece5">
+            <img src="images/piece5.jpg" alt="Piece 5">
+        </div>
+        <div class="puzzlePiece" id="piece6">
+            <img src="images/piece6.jpg" alt="Piece 6">
+        </div>
+        <div class="puzzlePiece" id="piece7">
+            <img src="images/piece7.jpg" alt="Piece 7">
+        </div>
+        <div class="puzzlePiece" id="piece8">
+            <img src="images/piece8.jpg" alt="Piece 8">
+        </div>
+        <div class="puzzlePiece" id="piece9">
+            <img src="images/piece9.jpg" alt="Piece 9">
+        </div>      
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    background-color: slategray;
+}
+
+.draggable{
+    position: absolute;
+    left: 800px;
+    z-index: 20;
+    
+}
+
+.puzzlePiece img{
+    width: 250px;
+    height: auto;
+}
+
+#puzzleContainer {
+    left: 200px;
+    width: 1000px;
+    position: relative;
+}
+
+
+#controls{
+    display: flex;
+    justify-content: center;
+}
+
+#controls button {
+    margin: 5px;
+    width: 50px;
+    z-index: 1;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: darkblue;
+    background-color:cornflowerblue;
+    color: black;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+}
+
+#menu a {
+    display: block;
+    padding: 10px 20px; 
+    background-color: #0074D9; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px; 
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+#menu a:hover {
+    background-color: #0056b3; 
+}
+
+.finalPosition {
+    position: absolute;
+    width: 250px; 
+    height: 165px;
+    border: 0.5px solid rgba(255, 255, 255, 0.243); 
+    z-index: 1; 
+}
+
+.hidden {
+    display: none;
+}

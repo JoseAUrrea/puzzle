@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jqeury": "^0.0.1-security",
+    "jquery-ui": "^1.13.2"
+  }
+}
